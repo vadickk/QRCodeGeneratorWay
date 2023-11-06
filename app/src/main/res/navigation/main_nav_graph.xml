@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainNavGraph"
+    app:startDestination="@id/generationNavGraph">
+
+    <include app:graph="@navigation/generation_nav_graph" />
+    <include app:graph="@navigation/generation_from_text_nav_graph" />
+    <include app:graph="@navigation/generation_from_link_nav_graph" />
+    <include app:graph="@navigation/generation_from_phone_nav_graph" />
+    <include app:graph="@navigation/favorites_nav_graph" />
+</navigation>

@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+    }
+}
+rootProject.name = "QRCodeGeneratorWay"
+include ':app'
+include ':core'
+include ':generation'
+include ':generation_from_text'
+include ':generation_from_link'
+include ':generation_from_phone'
+include ':favorites'
